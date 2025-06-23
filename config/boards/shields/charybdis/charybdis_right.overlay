@@ -112,6 +112,7 @@
     };
 };
 
+/*
 &trackball_listener {
     status = "okay";
     input-processors = <&zip_temp_layer 3 700>;
@@ -131,3 +132,4 @@
         input-processors = <&zip_xy_scaler 0 1>;
     };
 };
+*/
