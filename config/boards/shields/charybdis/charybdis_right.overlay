@@ -109,10 +109,21 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+    input-processors = <&zip_xy_swap_mapper>;
+    default {
+        //layers = <DEFAULT>;
+	layers = <0>;
+        process-next;
+    };
+    scroll {
+        //layers = <SCRLM SCRLH>;
+	layers = <4>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_xy_swap_mapper>, <&zip_xy_scaler 1 10>, <&zip_xy_to_scroll_mapper>;
+        process
     };
 };
 
-
+/*
 / {
   trackball_listener: trackball_listner {
     compatible = "zmk,input-listener";
@@ -131,7 +142,7 @@
     };
   };
 
-
+*/
 
 /*
 &trackball_listener {
