@@ -100,10 +100,10 @@
 
         clicks {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSPACE
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans            &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp RCLK  &trans            &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans            &trans             &trans
                         &trans  &trans  &trans    &trans  &trans
                                 &trans  &trans    &trans
             >;
