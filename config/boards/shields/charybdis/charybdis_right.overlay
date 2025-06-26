@@ -114,7 +114,7 @@
     };
     scroll {
 	layers = <4>;
-        input-processors = <&zip_xy_to_scroll_mapper>;
+        // input-processors = <&zip_xy_to_scroll_mapper>;
         process-next;
     };
 };
