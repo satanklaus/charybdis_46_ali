@@ -109,6 +109,7 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+	input-processors = <&zip_xy_swap_mapper>;
     default {
 	layers = <0>;
         process-next;
