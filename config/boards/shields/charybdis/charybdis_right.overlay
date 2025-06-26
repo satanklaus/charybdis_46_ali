@@ -110,12 +110,10 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
     default {
-        //layers = <DEFAULT>;
 	layers = <QWERTY>;
         process-next;
     };
     scroll {
-        //layers = <SCRLM SCRLH>;
 	layers = <clicks>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_xy_swap_mapper>, <&zip_xy_scaler 1 10>, <&zip_xy_to_scroll_mapper>;
         process
