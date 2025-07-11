@@ -7,6 +7,7 @@
 #include "charybdis.dtsi"
 #include "input/processors.dtsi"
 #include <dt-bindings/zmk/input_transform.h>
+#include <input/processors/zmk-input-processor-keybind.dtsi>
 
 &default_transform {
     col-offset = <6>;
