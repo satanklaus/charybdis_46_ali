@@ -19,8 +19,8 @@ pip install -r zephyr/scripts/requirements-base.txt
 
 ### build
 ```
-west build -p -b nice_nano_v2 -- -DSHIELD=charybdis_left -DZMK_CONFIG=/home/saiba/src/charybdis_46_ali/config -DZMK_EXTRA_MODULES="/home/saiba/src/zmk-pmw3610-driver/"
-west build -p -b nice_nano_v2 -- -DSHIELD=charybdis_right -DZMK_CONFIG=/home/saiba/src/charybdis_46_ali/config -DZMK_EXTRA_MODULES="/home/saiba/src/zmk-pmw3610-driver/"
-west build -p -b nice_nano_v2 -- -DSHIELD=settings_reset -DZMK_CONFIG=/home/saiba/src/charybdis_46_ali/config -DZMK_EXTRA_MODULES="/home/saiba/src/zmk-pmw3610-driver/"
+west build -p -b nice_nano_v2 -- -d build/left -DSHIELD=charybdis_left -DZMK_CONFIG=/home/saiba/src/charybdis_46_ali/config -DZMK_EXTRA_MODULES="/home/saiba/src/zmk-pmw3610-driver/"
+west build -p -b nice_nano_v2 -- -d build/right -DSHIELD=charybdis_right -DZMK_CONFIG=/home/saiba/src/charybdis_46_ali/config -DZMK_EXTRA_MODULES="/home/saiba/src/zmk-pmw3610-driver/"
+west build -p -b nice_nano_v2 -- -d build/reset -DSHIELD=settings_reset -DZMK_CONFIG=/home/saiba/src/charybdis_46_ali/config -DZMK_EXTRA_MODULES="/home/saiba/src/zmk-pmw3610-driver/"
 ```
 
