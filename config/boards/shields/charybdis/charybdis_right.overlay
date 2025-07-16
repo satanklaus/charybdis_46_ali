@@ -108,7 +108,7 @@
 
 
 / {
-    zip_keybind_keys1: zip_keybind_keys {
+    zip_keybind_keys1: zip_keybind_keys1 {
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         track_remainders;
@@ -127,7 +127,7 @@
 };
 
 / {
-    zip_keybind_keys2: zip_keybind_keys {
+    zip_keybind_keys2: zip_keybind_keys2 {
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         track_remainders;
@@ -146,7 +146,7 @@
 };
 
 / {
-    zip_keybind_keys3: zip_keybind_keys {
+    zip_keybind_keys3: zip_keybind_keys3 {
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         track_remainders;
@@ -165,7 +165,7 @@
 };
 
 / {
-    zip_keybind_keys4: zip_keybind_keys {
+    zip_keybind_keys4: zip_keybind_keys4 {
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         track_remainders;
@@ -193,7 +193,7 @@
     };
     scroll {
 	layers = <4>;
-        input-processors = <&zip_keybind_keys2>;
+        input-processors = <&zip_keybind_keys4>;
         //input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
         process-next;
     };
