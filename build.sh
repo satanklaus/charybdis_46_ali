@@ -3,7 +3,7 @@
 #comment out to disable
 logging=" -S zmk-usb-logging"
 builddir=$PWD
-mkdir $PWD/artifacts
+mkdir $PWD/artifacts &>/dev/null
 
 source ~/venvs/zmk/bin/activate
 

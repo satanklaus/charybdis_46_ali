@@ -150,10 +150,10 @@
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         track_remainders;
-        bindings = <&kp RIGHT>,
-                  <&kp LEFT>,
-                  <&kp NUMBER_3>,
-                  <&kp NUMBER_3>;
+        bindings = <&none>,
+                  <&none>,
+                  <&kp K_VOLUME_UP>,
+                  <&kp K_VOLUME_DOWN>;
         tick = <40>;
         wait-ms = <0>;
         tap-ms = <10>;
@@ -165,17 +165,14 @@
 };
 
 / {
-    zip_keybind_keys4: zip_keybind_keys4 {
+    zip_keybind_keys_arrows: zip_keybind_keys_arrows{
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
-        track_remainders;
-        bindings = <&kp RIGHT>,
-                  <&kp LEFT>,
-                  <&kp NUMBER_4>,
-                  <&kp NUMBER_4>;
-        tick = <40>;
-        wait-ms = <0>;
-        tap-ms = <10>;
+        //track_remainders;
+        bindings = <&kp RIGHT>, <&kp LEFT>, <&kp UP>, <&kp DOWN>;
+        //tick = <40>;
+        //wait-ms = <0>;
+        //tap-ms = <10>;
         // mode = <1>
         // threshold = <10>
         // max_threshold = <200>
@@ -187,20 +184,19 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-    default {
-	layers = <0>;
-        process-next;
-    };
     scroll {
 	layers = <4>;
-        input-processors = <&zip_keybind_keys4>;
-        //input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
         process-next;
     };
-    arrors {
+    arrows {
 	layers = <3>;
-        input-processors = <&zip_keybind_keys3>;
+        input-processors = <&zip_keybind_keys_arrows>;
         process-next;
+    };
+    default {
+	layers = <0>;
+    //    process-next;
     };
 };
 };
