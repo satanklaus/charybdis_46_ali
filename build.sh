@@ -11,8 +11,6 @@ cd ~/src/zmk/app
 
 targets=(charybdis_left charybdis_right settings_reset)
 
-mkdir artifacts &>/dev/null
-
 for target in ${targets[*]}; do 
 	echo $target; 
 	mkdir -p ./build/$target &>/dev/null
