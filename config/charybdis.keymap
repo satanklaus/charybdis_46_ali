@@ -100,7 +100,7 @@
 
         clicks {
             bindings = <
-&kp NUMBER_4  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSPACE
+&kp NUMBER_4  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp KP_EQUAL
 &trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans            &trans             &trans
 &trans        &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp RCLK  &trans            &trans             &trans
 &trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans            &trans             &trans
