@@ -60,7 +60,7 @@
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         //scroll-layers = <3>;
         //snipe-layers = <4>;
-        automouse-layer = <4>;
+//        automouse-layer = <4>;
     };
 };
 
@@ -186,7 +186,7 @@
         device = <&trackball>;
     scroll {
 	layers = <4>;
-//        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
         process-next;
     };
     arrows {
