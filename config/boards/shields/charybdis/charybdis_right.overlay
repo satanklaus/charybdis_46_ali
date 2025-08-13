@@ -185,15 +185,15 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
     scroll {
-	layers = <4>;
+	layers = <3>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
         process-next;
     };
-    arrows {
-	layers = <3>;
-        input-processors = <&zip_keybind_keys_arrows>;
-        process-next;
-    };
+//    arrows {
+//	layers = <3>;
+ //       input-processors = <&zip_keybind_keys_arrows>;
+  //      process-next;
+   // };
     default {
 	layers = <0>;
     //    process-next;
