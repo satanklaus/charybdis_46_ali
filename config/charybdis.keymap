@@ -51,6 +51,15 @@
         };
     };
 
+    behaviors {
+        double_control: double_control {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOUBLE_CONTROL";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_CONTROL>, <&kp RIGHT_CONTROL>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
