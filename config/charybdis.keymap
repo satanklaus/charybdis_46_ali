@@ -131,11 +131,11 @@
 
         LAZY {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp RCLK  &mo 7   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &mkp LCLK  &mkp RCLK  &mo 7   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans     &trans  &trans  &trans
+                        &trans  &trans  &trans    &kp LEFT_ARROW  &kp RIGHT
                                 &trans  &trans    &to 0
             >;
         };
