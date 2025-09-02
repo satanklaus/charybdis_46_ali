@@ -109,8 +109,8 @@
 
         supplements {
             bindings = <
-&kp TILDE  &trans  &trans  &trans  &trans  &trans       &kp PRINTSCREEN  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(EQUAL)
-&trans     &trans  &trans  &trans  &trans  &kp GRAVE    &kp LC(INSERT)   &kp LS(INSERT)  &trans           &trans            &trans             &kp PLUS
+&kp TILDE  &trans  &trans  &trans  &trans  &trans       &kp PRINTSCREEN  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
+&trans     &trans  &trans  &trans  &trans  &kp GRAVE    &kp LC(INSERT)   &kp LS(INSERT)  &trans           &trans            &trans             &kp LS(EQUAL)
 &trans     &trans  &trans  &trans  &trans  &trans       &trans           &mkp LCLK       &mkp RCLK        &trans            &trans             &kp GRAVE
 &trans     &trans  &trans  &trans  &trans  &trans       &trans           &trans          &trans           &trans            &trans             &trans
                            &trans  &trans  &trans       &trans           &trans
