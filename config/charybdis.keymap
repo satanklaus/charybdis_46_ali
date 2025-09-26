@@ -60,6 +60,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        yo {
+            bindings = <&kp GRAVE>;
+            key-positions = <31 15>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
