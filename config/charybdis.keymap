@@ -65,7 +65,7 @@
 
         yo {
             bindings = <&kp GRAVE>;
-            key-positions = <31 15>;
+            key-positions = <31 17>;
             layers = <0>;
         };
     };
