@@ -68,6 +68,16 @@
             key-positions = <31 17>;
             layers = <0>;
         };
+
+        caf1 {
+            bindings = <&kp LC(LA(F1))>;
+            key-positions = <0 36 53>;
+        };
+
+        caf2 {
+            bindings = <&kp LC(LA(F2))>;
+            key-positions = <53 36 1>;
+        };
     };
 
     keymap {
