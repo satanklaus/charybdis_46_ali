@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MULTI_CONTROL";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_CONTROL>, <&to 6>;
+            bindings = <&kp RIGHT_CONTROL>, <&to 5>;
         };
     };
 
@@ -130,22 +130,11 @@
             >;
         };
 
-        RU {
-            bindings = <
-&kp GRAVE   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET
-&US_LAYOUT  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans  &trans  &trans    &trans  &trans
-                                    &trans  &trans    &trans
-            >;
-        };
-
         LAZY {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &mkp LCLK  &mkp RCLK  &mo 7   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &mkp LCLK  &mkp RCLK  &mo 6   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans     &trans  &trans  &trans
                         &trans  &trans  &trans    &kp LEFT_ARROW  &kp RIGHT
                                 &trans  &trans    &to 0
