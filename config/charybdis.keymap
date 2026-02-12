@@ -96,12 +96,12 @@
 
         F_layers {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6        &kp F7     &kp F8     &kp F9    &kp F10       &kp F11    &kp F12
-&trans  &none   &none   &none   &none   &trans        &none      &none      &none     &kp UP_ARROW  &kp MINUS  &kp EQUAL
-&trans  &none   &none   &none   &none   &trans        &mkp LCLK  &mkp RCLK  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &none         &none      &none      &trans    &trans        &none      &trans
-                        &trans  &trans  &To0_macro    &mkp LCLK  &mkp RCLK
-                                &trans  &trans        &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5        &kp F6     &kp F7     &kp F8    &kp F9        &kp F10    &trans
+&trans  &kp F11  &kp F12  &none   &none   &trans        &none      &none      &none     &kp UP_ARROW  &kp MINUS  &kp EQUAL
+&trans  &none    &none    &none   &none   &trans        &mkp LCLK  &mkp RCLK  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans  &trans   &trans   &trans  &trans  &none         &none      &none      &trans    &trans        &none      &trans
+                          &trans  &trans  &To0_macro    &mkp LCLK  &mkp RCLK
+                                  &trans  &trans        &trans
             >;
         };
 
