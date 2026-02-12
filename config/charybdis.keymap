@@ -41,20 +41,6 @@
                 <&macro_wait_time 30>,
                 <&rgb_ug RGB_COLOR_HSB(250,100,50)>;
         };
-
-        RU_LAYOUT: RU_LAYOUT {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &to 5>;
-            label = "RU_LAYOUT";
-        };
-
-        US_LAYOUT: US {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_ALT) &to 0>;
-            label = "US";
-        };
     };
 
     behaviors {
