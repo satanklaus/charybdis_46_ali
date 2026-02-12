@@ -10,6 +10,12 @@
     quick-tap-ms = <150>;
 };
 
+&mt {
+    tapping-term-ms = <200>;
+    flavor = "balanced";
+    quick-tap-ms = <150>;
+};
+
 / {
     macros {
         To1_macro: To1_macro {
