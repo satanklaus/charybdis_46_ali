@@ -44,11 +44,11 @@
     };
 
     behaviors {
-        multi_control: multi_control {
+        multi_backspace: multi_backspace {
             compatible = "zmk,behavior-tap-dance";
-            label = "MULTI_CONTROL";
+            label = "MULTI_BACKSPACE";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_CONTROL>, <&to 5>;
+            bindings = <&kp BACKSPACE>, <&to 5>;
         };
     };
 
