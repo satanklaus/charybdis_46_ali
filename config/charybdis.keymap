@@ -55,20 +55,24 @@
     combos {
         compatible = "zmk,combos";
 
-        yo {
-            bindings = <&kp GRAVE>;
-            key-positions = <31 17>;
-            layers = <0>;
+        boot_left {
+            bindings = <&bootloader>;
+            key-positions = <0 1>;
         };
 
-        caf1 {
-            bindings = <&kp LC(LA(F1))>;
-            key-positions = <0 36 53>;
+        boot_right {
+            bindings = <&bootloader>;
+            key-positions = <11 10>;
         };
 
-        caf2 {
-            bindings = <&kp LC(LA(F2))>;
-            key-positions = <53 36 1>;
+        reset_left {
+            bindings = <&sys_reset>;
+            key-positions = <12 13>;
+        };
+
+        reset_right {
+            bindings = <&sys_reset>;
+            key-positions = <22 23>;
         };
     };
 
