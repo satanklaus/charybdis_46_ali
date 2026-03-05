@@ -1,0 +1,13 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch Charybdis_4x6
+# Your branch is up to date with 'origin/Charybdis_4x6'.
+#
+# Changes to be committed:
+#	modified:   build.sh
+#	new file:   build2.sh
+#	modified:   config/boards/shields/charybdis/charybdis_right.overlay
+#	modified:   config/charybdis.keymap
+#
