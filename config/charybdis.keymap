@@ -52,29 +52,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        boot_left {
-            bindings = <&bootloader>;
-            key-positions = <0 1>;
-        };
-
-        boot_right {
-            bindings = <&bootloader>;
-            key-positions = <11 10>;
-        };
-
-        reset_left {
-            bindings = <&sys_reset>;
-            key-positions = <12 13>;
-        };
-
-        reset_right {
-            bindings = <&sys_reset>;
-            key-positions = <22 23>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -86,7 +64,7 @@
 &kp LEFT_WIN    &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &lt 4 F    &lt 1 G          &lt 1 H        &lt 4 J    &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_CONTROL SEMICOLON  &mt LEFT_WIN SQT
 &kp LEFT_SHIFT  &kp Z               &kp X           &kp C             &kp V      &lt 2 B          &kp N          &kp M      &kp COMMA         &kp DOT         &kp FSLH                    &kp RIGHT_SHIFT
                                                     &kp LEFT_WIN      &kp SPACE  &kp BACKSPACE    &kp ENTER      &kp SPACE
-                                                                      &mo 3      &mo 4            &kp BACKSPACE
+                                                                      &mo 3      &mo 7            &kp BACKSPACE
             >;
         };
 
@@ -153,6 +131,28 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
                                 &trans  &trans    &trans
+            >;
+        };
+
+        Service {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none
+                            &none  &none    &none
+            >;
+        };
+
+        pure_typin {
+            bindings = <
+&kp ESC         &kp N1  &kp N2  &kp N3        &kp N4     &kp N5           &kp N6         &kp N7     &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB         &kp Q   &kp W   &kp E         &kp R      &kp T            &kp Y          &kp U      &kp I      &kp O    &kp P     &kp BSLH
+&kp LEFT_WIN    &kp A   &kp S   &kp D         &kp F      &kp G            &kp H          &kp J      &kp K      &kp L    &kp SQT   &mt LEFT_WIN SQT
+&kp LEFT_SHIFT  &kp Z   &kp X   &kp C         &kp V      &kp B            &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                                &kp LEFT_WIN  &kp SPACE  &kp BACKSPACE    &kp ENTER      &kp SPACE
+                                              &mo 3      &mo 7            &kp BACKSPACE
             >;
         };
     };
