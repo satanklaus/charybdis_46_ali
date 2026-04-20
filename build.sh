@@ -5,7 +5,7 @@ logging=" -S zmk-usb-logging"
 builddir=$PWD
 mkdir $PWD/artifacts &>/dev/null
 
-source ~/venvs/zmk2/bin/activate
+source ~/venvs/zmk/bin/activate
 
 cd ~/src/zmk/app
 

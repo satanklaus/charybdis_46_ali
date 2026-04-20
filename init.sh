@@ -4,10 +4,12 @@ cd $HOME/src
 
 git clone https://github.com/zmkfirmware/zmk.git
 git clone https://github.com/DoctorWangWang/zmk-pmw3610-driver
-git clone https://github.com/satanklaus/charybdis_46_ali
+git clone https://github.com/zettaface/zmk-input-processor-keybind
 
 cd zmk
-python -m ~/venvs/zmk
+git fetch --tags
+git checkout v0.3
+python -m venv ~/venvs/zmk
 . ~/venvs/zmk/bin/activate
 pip install west
 west init -l app/
