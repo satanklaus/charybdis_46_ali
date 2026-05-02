@@ -52,7 +52,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        three_fingers {
+            bindings = <&kp LC(LA(DELETE))>;
+            key-positions = <32 33 34>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
